@@ -4,4 +4,9 @@
     <string name="category_restaurants">Restaurants</string>
     <string name="category_hotels">Hotels</string>
     <string name="category_events">Events</string>
+
+    <string name="red_fort"> Red Fort</string>
+    <string name="red_fort_description"> The Red Fort is a historic fort in the city of Delhi in India that served as the main residence of the Mughal Emperors.</string>
+    <string name="red_fort_location">Netaji Subhash Marg, Lal Qila, Chandni Chowk, New Delhi, Delhi 110006</string>
+    <string name="red_fort_timing">8:00 – 17:00</string>
 </resources>

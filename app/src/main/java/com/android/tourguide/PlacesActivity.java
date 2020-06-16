@@ -16,7 +16,11 @@ public class PlacesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_places);
 
         List<Location> list = new ArrayList<>();
-        list.add(new Location("Mountain View", "This is the description", "California", "8:00 - 17:00", R.drawable.container));
+        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.red_fort));
+        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.humayun_tomb));
+        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.images));
+        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.jama_masjid));
+        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.lotus_temple));
 
         LocationAdapter adapter = new LocationAdapter(this, list);
         ListView listView = findViewById(R.id.list);
