@@ -28,13 +28,13 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         View listItemView = convertView;
         if (listItemView == null) {
 
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.location_item, parent, false);
         }
 
         // get the object located at this location
         Location currentLocation = getItem(position);
 
-        // finding the titleTextView in list_item and setting value to it.
+        // finding the titleTextView in location_item and setting value to it.
         TextView titleTextView = listItemView.findViewById(R.id.titleTextView);
         titleTextView.setText(currentLocation.getmTitle());
 
