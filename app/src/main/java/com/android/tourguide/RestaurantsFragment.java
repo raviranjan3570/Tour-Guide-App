@@ -27,13 +27,13 @@ public class RestaurantsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         List<Location> list = new ArrayList<>();
-        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.red_fort));
-        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.humayun_tomb));
-        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.images));
-        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.jama_masjid));
-        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.lotus_temple));
+        list.add(new Location(R.string.pind_balluchi, R.string.pind_balluchi_description, R.string.pind_balluchi_location, R.string.pind_balluchi_number, R.drawable.pind_baluchi));
+        list.add(new Location(R.string.jamun, R.string.jama_masjid_description, R.string.jamun_location, R.string.jamun_number, R.drawable.jamun));
+        list.add(new Location(R.string.beeryani, R.string.beeryani_description, R.string.beeryani_location, R.string.beeryani_number, R.drawable.beeryani));
+        list.add(new Location(R.string.indian_accent, R.string.indian_accent_description, R.string.indian_accent_location, R.string.indian_accent_number, R.drawable.indian_accent));
+        list.add(new Location(R.string.diggin, R.string.diggin_description, R.string.diggin_location, R.string.diggin_number, R.drawable.diggin));
 
-        LocationAdapter adapter = new LocationAdapter(getActivity(), list);
+        HotelRestaurantAdapter adapter = new HotelRestaurantAdapter(getActivity(), list);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
         return rootView;

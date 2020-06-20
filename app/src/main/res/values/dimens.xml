@@ -15,4 +15,5 @@
 
     <!-- margin between two cards-->
     <dimen name="card_margin">8dp</dimen>
+    <dimen name="title_margin">32dp</dimen>
 </resources>

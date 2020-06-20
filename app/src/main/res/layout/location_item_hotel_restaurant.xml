@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/photoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/field_text_view_padding"
+                android:paddingEnd="@dimen/field_text_view_padding"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                tools:text="Mountain View" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                style="@style/NonTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:drawableStart="@drawable/baseline_description_black_24"
+                android:drawablePadding="@dimen/drawable_icon_padding"
+                android:paddingStart="@dimen/field_text_view_padding"
+                android:paddingEnd="@dimen/field_text_view_padding"
+                tools:text="This is the description of the place." />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                style="@style/NonTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:autoLink="map"
+                android:drawableStart="@drawable/baseline_location_on_black_24"
+                android:drawablePadding="@dimen/drawable_icon_padding"
+                android:paddingStart="@dimen/field_text_view_padding"
+                android:paddingEnd="@dimen/field_text_view_padding"
+                tools:text="California" />
+
+            <TextView
+                android:id="@+id/timeTextView"
+                style="@style/NonTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:autoLink="phone"
+                android:drawableStart="@drawable/ic_phone_black_24dp"
+                android:drawablePadding="@dimen/drawable_icon_padding"
+                android:paddingStart="@dimen/field_text_view_padding"
+                android:paddingEnd="@dimen/field_text_view_padding"
+                tools:text="10:00 - 20:00" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

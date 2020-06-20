@@ -30,11 +30,11 @@ public class PlacesFragment extends Fragment {
         List<Location> list = new ArrayList<>();
         list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.red_fort));
         list.add(new Location(R.string.humayun_tomb, R.string.humayun_tomb_description, R.string.humayun_tomb_location, R.string.humayun_tomb_timing, R.drawable.humayun_tomb));
-        list.add(new Location(R.string.india_gate, R.string.india_gate_description, R.string.india_gate_location, R.string.india_gate_timing, R.drawable.images));
+        list.add(new Location(R.string.india_gate, R.string.india_gate_description, R.string.india_gate_location, R.string.india_gate_timing, R.drawable.india_gate));
         list.add(new Location(R.string.jama_masjid, R.string.jama_masjid_description, R.string.jama_masjid_location, R.string.jama_masjid_timing, R.drawable.jama_masjid));
         list.add(new Location(R.string.lotus_temple, R.string.lotus_temple_description, R.string.lotus_temple_location, R.string.lotus_temple_timing, R.drawable.lotus_temple));
 
-        LocationAdapter adapter = new LocationAdapter(getActivity(), list);
+        PlaceShoppingAdapter adapter = new PlaceShoppingAdapter(getActivity(), list);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
         return rootView;
