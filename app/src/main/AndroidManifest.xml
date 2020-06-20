@@ -9,22 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".EventsActivity"
-            android:label="@string/category_events"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".HotelsActivity"
-            android:label="@string/category_hotels"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".RestaurantsActivity"
-            android:label="@string/category_restaurants"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".PlacesActivity"
-            android:label="@string/category_places"
-            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,31 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/places"
-        style="@style/CategoryStyle"
-        android:background="@color/category_places"
-        android:text="@string/category_places"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/sliding_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabMode="fixed"
+        app:tabTextColor="@android:color/white" />
 
-    <TextView
-        android:id="@+id/restaurants"
-        style="@style/CategoryStyle"
-        android:background="@color/category_restaurant"
-        android:text="@string/category_restaurants"/>
-
-    <TextView
-        android:id="@+id/hotels"
-        style="@style/CategoryStyle"
-        android:background="@color/category_hotels"
-        android:text="@string/category_hotels"/>
-
-    <TextView
-        android:id="@+id/events"
-        style="@style/CategoryStyle"
-        android:background="@color/category_events"
-        android:text="@string/category_events"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

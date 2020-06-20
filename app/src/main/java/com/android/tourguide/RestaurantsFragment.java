@@ -14,9 +14,9 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PlacesFragment extends Fragment {
+public class RestaurantsFragment extends Fragment {
 
-    public PlacesFragment() {
+    public RestaurantsFragment() {
         // Required empty public constructor
     }
 
@@ -24,15 +24,14 @@ public class PlacesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         List<Location> list = new ArrayList<>();
         list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.red_fort));
-        list.add(new Location(R.string.humayun_tomb, R.string.humayun_tomb_description, R.string.humayun_tomb_location, R.string.humayun_tomb_timing, R.drawable.humayun_tomb));
-        list.add(new Location(R.string.india_gate, R.string.india_gate_description, R.string.india_gate_location, R.string.india_gate_timing, R.drawable.images));
-        list.add(new Location(R.string.jama_masjid, R.string.jama_masjid_description, R.string.jama_masjid_location, R.string.jama_masjid_timing, R.drawable.jama_masjid));
-        list.add(new Location(R.string.lotus_temple, R.string.lotus_temple_description, R.string.lotus_temple_location, R.string.lotus_temple_timing, R.drawable.lotus_temple));
+        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.humayun_tomb));
+        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.images));
+        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.jama_masjid));
+        list.add(new Location(R.string.red_fort, R.string.red_fort_description, R.string.red_fort_location, R.string.red_fort_timing, R.drawable.lotus_temple));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), list);
         ListView listView = rootView.findViewById(R.id.list);

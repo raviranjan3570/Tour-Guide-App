@@ -1,11 +1,11 @@
 package com.android.tourguide;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,40 +14,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView placesTextView = findViewById(R.id.places);
-        placesTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, PlacesActivity.class);
-                startActivity(intent);
-            }
-        });
+        getSupportActionBar().setElevation(0);
 
-        TextView restaurantsTextView = findViewById(R.id.restaurants);
-        restaurantsTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, RestaurantsActivity.class);
-                startActivity(intent);
-            }
-        });
+        int[] imageResId = {
+                R.drawable.ic_location_on_black_24dp,
+                R.drawable.ic_restaurant_black_24dp,
+                R.drawable.ic_hotel_black_24dp,
+                R.drawable.ic_shopping_cart_black_24dp};
 
-        TextView hotelsTextView = findViewById(R.id.hotels);
-        hotelsTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, HotelsActivity.class);
-                startActivity(intent);
-            }
-        });
+        ViewPager viewPager = findViewById(R.id.view_pager);
+        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager(), 0, this);
+        viewPager.setAdapter(adapter);
 
-        TextView eventsTextView = findViewById(R.id.events);
-        eventsTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, EventsActivity.class);
-                startActivity(intent);
-            }
-        });
+        TabLayout tabLayout = findViewById(R.id.sliding_tab);
+        tabLayout.setupWithViewPager(viewPager);
+
+        for (int i = 0; i < imageResId.length; i++) {
+            tabLayout.getTabAt(i).setIcon(imageResId[i]);
+        }
     }
 }
