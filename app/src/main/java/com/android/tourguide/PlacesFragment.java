@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -34,7 +35,7 @@ public class PlacesFragment extends Fragment {
         list.add(new Location(R.string.jama_masjid, R.string.jama_masjid_description, R.string.jama_masjid_location, R.string.jama_masjid_timing, R.drawable.jama_masjid));
         list.add(new Location(R.string.lotus_temple, R.string.lotus_temple_description, R.string.lotus_temple_location, R.string.lotus_temple_timing, R.drawable.lotus_temple));
 
-        PlaceShoppingAdapter adapter = new PlaceShoppingAdapter(getActivity(), list);
+        PlaceShoppingAdapter adapter = new PlaceShoppingAdapter(Objects.requireNonNull(getActivity()), list);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
         return rootView;

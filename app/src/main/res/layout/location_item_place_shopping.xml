@@ -21,6 +21,7 @@
                 android:id="@+id/photoImageView"
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
+                android:contentDescription="@string/image_view_description"
                 android:scaleType="centerCrop" />
 
             <TextView

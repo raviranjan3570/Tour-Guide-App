@@ -1,6 +1,6 @@
 package com.android.tourguide;
 
-public class Location {
+class Location {
 
     private int mTitle;
     private int mDetail;
@@ -8,7 +8,7 @@ public class Location {
     private int mTime;
     private int mImageId;
 
-    public Location(int mTitle, int mDetail, int mAddress, int mTime, int mImageId) {
+    Location(int mTitle, int mDetail, int mAddress, int mTime, int mImageId) {
         this.mTitle = mTitle;
         this.mDetail = mDetail;
         this.mAddress = mAddress;
@@ -16,23 +16,23 @@ public class Location {
         this.mImageId = mImageId;
     }
 
-    public int getmTitle() {
+    int getmTitle() {
         return mTitle;
     }
 
-    public int getmDetail() {
+    int getmDetail() {
         return mDetail;
     }
 
-    public int getmAddress() {
+    int getmAddress() {
         return mAddress;
     }
 
-    public int getmTime() {
+    int getmTime() {
         return mTime;
     }
 
-    public int getmImageId() {
+    int getmImageId() {
         return mImageId;
     }
 }

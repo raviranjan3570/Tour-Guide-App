@@ -16,7 +16,7 @@ import java.util.List;
 public class HotelRestaurantAdapter extends ArrayAdapter<Location> {
 
 
-    public HotelRestaurantAdapter(@NonNull Context context, @NonNull List<Location> locations) {
+    HotelRestaurantAdapter(@NonNull Context context, @NonNull List<Location> locations) {
         super(context, 0, locations);
     }
 
@@ -36,6 +36,7 @@ public class HotelRestaurantAdapter extends ArrayAdapter<Location> {
 
         // finding the titleTextView in location_item_place_shopping and setting value to it.
         TextView titleTextView = listItemView.findViewById(R.id.titleTextView);
+        assert currentLocation != null;
         titleTextView.setText(currentLocation.getmTitle());
 
         TextView descriptionTextView = listItemView.findViewById(R.id.descriptionTextView);

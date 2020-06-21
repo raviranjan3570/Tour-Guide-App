@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -33,7 +34,7 @@ public class HotelsFragment extends Fragment {
         list.add(new Location(R.string.the_lodhi, R.string.the_lodhi_description, R.string.the_lodhi_location, R.string.the_lodhi_number, R.drawable.the_lodhi));
         list.add(new Location(R.string.taj_palace, R.string.taj_palace_description, R.string.taj_palace_location, R.string.taj_palace_number, R.drawable.taj_palace));
 
-        HotelRestaurantAdapter adapter = new HotelRestaurantAdapter(getActivity(), list);
+        HotelRestaurantAdapter adapter = new HotelRestaurantAdapter(Objects.requireNonNull(getActivity()), list);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
         return rootView;

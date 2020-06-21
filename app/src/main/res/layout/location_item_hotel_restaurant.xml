@@ -21,6 +21,7 @@
                 android:id="@+id/photoImageView"
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
+                android:contentDescription="@string/image_view_description"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -51,7 +52,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:autoLink="map"
                 android:drawableStart="@drawable/baseline_location_on_black_24"
                 android:drawablePadding="@dimen/drawable_icon_padding"
                 android:paddingStart="@dimen/field_text_view_padding"

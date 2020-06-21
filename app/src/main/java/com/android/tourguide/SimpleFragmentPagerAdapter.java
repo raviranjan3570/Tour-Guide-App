@@ -1,7 +1,5 @@
 package com.android.tourguide;
 
-import android.content.Context;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -10,11 +8,8 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private Context mContext;
-
-    public SimpleFragmentPagerAdapter(@NonNull FragmentManager fm, int behavior, Context context) {
+    SimpleFragmentPagerAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
-        mContext = context;
     }
 
     @NonNull

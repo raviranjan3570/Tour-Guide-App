@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Tour Guide</string>
     <string name="category_places">Places</string>
     <string name="category_restaurants">Restaurants</string>
@@ -72,7 +72,7 @@
 
     <string name="pind_balluchi">Pind Balluchi</string>
     <string name="pind_balluchi_description">Known across the country for their authentic North Indian preparations, Pind Balluchi - one of the best North Indian restaurants in Delhi have a strong presence as a brand that does not compromise on quality or either taste. </string>
-    <string name="pind_balluchi_location">1/3, Scindia House, Janpath, New Delhi</string>
+    <string name="pind_balluchi_location" tools:ignore="TypographyFractions">1/3, Scindia House, Janpath, New Delhi</string>
     <string name="pind_balluchi_number">92 0533 4172</string>
 
     <string name="diggin">Diggin</string>
@@ -83,25 +83,26 @@
     <string name="select_city">Select City</string>
     <string name="select_city_description">Fan of all things plush? Well, then you must visit the Select City Walk, a vibrant, upscale and the biggest shopping mall in the heart of South Delhi. The chic shopping center is not just another mall where people come only to shop.</string>
     <string name="select_city_location"> Saket District center, South Delhi</string>
-    <string name="select_city_timing">10:00 - 23:00</string>
+    <string name="select_city_timing">10:00 – 23:00</string>
 
     <string name="dlf_promenade">DLF Promenade</string>
     <string name="dlf_promenade_description">DLF is one of the companies that redefined shopping in the country. Besides Delhi, the company also boasts a portfolio of several luxury shopping malls in Noida, Gurgaon, and Chandigarh.</string>
     <string name="dlf_promenade_location">Vasant Kunj, South Delhi</string>
-    <string name="dlf_promenade_timing">11:00 - 23:00</string>
+    <string name="dlf_promenade_timing">11:00 – 23:00</string>
 
     <string name="dlf_emporio">DLF Emporio</string>
     <string name="dlf_emporio_description">Known to be one of the most expensive malls in the country, the DLF Emporio is a name synonymous with luxury. The four-storeyed mall with a total retail area of 320,000 sq.</string>
     <string name="dlf_emporio_location">Vasant Kunj, South Delhi</string>
-    <string name="dlf_emporio_timing">11:00 - 21:00</string>
+    <string name="dlf_emporio_timing">11:00 – 21:00</string>
 
     <string name="pacific_mall">Pacific Mall</string>
     <string name="pacific_mall_description">Its convenient location and excellent connectivity, both by public and private transport, make Pacific Mall, Delhi a popular shopping destination in the city.</string>
     <string name="pacific_mall_location">Tagore Garden, West Delhi</string>
-    <string name="pacific_mall_timing">11:00 - 22:00</string>
+    <string name="pacific_mall_timing">11:00 – 22:00</string>
 
     <string name="city_square">City Square</string>
     <string name="city_square_description">A premier shopping mall, the City Square, is one of the most prominent malls in West Delhi. From apparel stores to food outlets, you will find some of the best options in the mall.</string>
     <string name="city_square_location">Najafgarh Road, Shivaji Place, West Delhi</string>
-    <string name="city_square_timing">11:00 - 22:00</string>
+    <string name="city_square_timing">11:00 – 22:00</string>
+    <string name="image_view_description">image of cardView</string>
 </resources>
